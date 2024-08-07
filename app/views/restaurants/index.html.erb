@@ -1,0 +1,13 @@
+<div class="container mt-3">
+  <h1>All restaurants</h1>
+
+  <% @restaurants.each do |r| %>
+    <ul>
+      <li>
+        <p><strong><%= r.name %></strong></p>
+        <p><%= r.address %></p>
+        <p><%= r.category.capitalize %></p>
+      </li>
+    </ul>
+  <% end %>
+</div>
